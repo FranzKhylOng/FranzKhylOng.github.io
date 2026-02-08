@@ -71,6 +71,13 @@ export function Header() {
               Education
             </Link>
             <Link
+              href="/#contact"
+              className="transition-colors hover:text-foreground/80 text-foreground/60"
+              onClick={(e) => scrollToSection(e, "contact")}
+            >
+              Contact
+            </Link>
+            <Link
               href="/blog"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
             >
