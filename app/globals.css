@@ -1,26 +1,72 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 :root {
-  --background: #ffffff;
+  /* Light Mode */
+  --background: #F8F9FF;
   --foreground: #171717;
+  --primary: #7453DE;
+  --primary-foreground: #ffffff;
+  --card: #ffffff;
+  --card-foreground: #171717;
+  --border: #e5e7eb;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+}
+
+[data-theme="dark"] {
+  /* Dark Mode */
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #7453DE;
+  --primary-foreground: #ffffff;
+  --card: #171717;
+  --card-foreground: #ededed;
+  --border: #262626;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Typography Customization */
+.prose {
+  @apply text-foreground;
+}
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  @apply text-foreground font-bold;
+}
+.prose a {
+  @apply text-primary no-underline hover:underline;
+}
+.prose strong {
+  @apply text-foreground font-bold;
+}
+.prose code {
+  @apply text-primary bg-muted px-1 py-0.5 rounded text-sm;
+}
+.prose blockquote {
+  @apply border-l-4 border-primary pl-4 italic;
 }
