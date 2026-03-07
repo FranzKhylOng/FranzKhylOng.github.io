@@ -20,7 +20,7 @@ export function Hero() {
         <div className="flex flex-col space-y-6 order-1 md:order-2">
           <FadeIn delay={200}>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-              Hi, I'm <span className="text-primary italic">Franz</span>
+              Hi, I'm <span className="text-primary">Franz</span>
             </h1>
           </FadeIn>
           
