@@ -1,0 +1,4 @@
+- [ ] Update `Experience.tsx` to facilitate multiple bullet points in the description, also conditionally include multiple roles in a position
+- [ ] Update `Education.tsx` to look similar to experience
+- [ ] Update About Me description
+- [ ] Once you get a project done, update CTA in hero section to "Check out my work!"

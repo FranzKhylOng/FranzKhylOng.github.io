@@ -36,7 +36,7 @@ export function Hero() {
             href="#contact" 
             className="text-primary bg-transparent border border-primary rounded px-7 py-4 font-mono text-[16px] leading-[1] hover:bg-green-tint transition-colors inline-block mt-[10px]"
           >
-            Check out my work!
+            Let's work together!
           </a>
         </FadeIn>
       </div>

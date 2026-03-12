@@ -1,27 +1,16 @@
 "use client";
 
-import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 export function SocialSidebar() {
   const socialLinks = [
     {
       name: "GitHub",
-      url: "https://github.com/",
+      url: "https://github.com/FranzKhylOng",
       icon: <Github className="w-5 h-5" />,
     },
     {
-      name: "Instagram",
-      url: "https://instagram.com/",
-      icon: <Instagram className="w-5 h-5" />,
-    },
-    {
-      name: "Twitter",
-      url: "https://twitter.com/",
-      icon: <Twitter className="w-5 h-5" />,
-    },
-    {
-      name: "LinkedIn",
-      url: "https://linkedin.com/",
+      url: "https://linkedin.com/in/franz-khyl-ong/",
       icon: <Linkedin className="w-5 h-5" />,
     },
   ];

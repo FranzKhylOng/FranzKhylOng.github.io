@@ -18,7 +18,7 @@ export function Experience() {
 
       <div className="flex flex-col md:flex-row min-h-[340px]">
         {/* Tabs */}
-        <div className="relative flex md:flex-col overflow-x-auto md:overflow-visible border-b md:border-b-0 md:border-l border-navy-lightest w-full md:w-[150px] mb-8 md:mb-0 z-10 hide-scrollbar">
+        <div className="relative flex md:flex-col overflow-x-auto md:overflow-visible border-b md:border-b-0 md:border-l border-navy-lightest w-full md:w-[200px] mb-8 md:mb-0 z-10 hide-scrollbar">
           {experienceData.map((job, i) => {
             const isActive = activeTabId === job.id;
             return (
