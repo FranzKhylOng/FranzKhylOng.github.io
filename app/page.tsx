@@ -1,12 +1,14 @@
 import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
 import { Education } from "@/components/Education";
 import { Contact } from "@/components/Contact";
 
 export default function Home() {
   return (
-    <div className="container max-w-screen-lg mx-auto px-4 md:px-8 space-y-20 pb-20">
+    <div className="flex flex-col counter-reset:section">
       <Hero />
+      <About />
       <Experience />
       <Education />
       <Contact />

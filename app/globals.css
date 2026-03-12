@@ -1,32 +1,16 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
-
 :root {
-  /* Light Mode */
-  --background: #F8F9FF;
-  --foreground: #171717;
-  --primary: #7453DE;
-  --primary-foreground: #ffffff;
-  --card: #ffffff;
-  --card-foreground: #171717;
-  --border: #e5e7eb;
-  --muted: #f3f4f6;
-  --muted-foreground: #6b7280;
-}
-
-[data-theme="dark"] {
-  /* Dark Mode */
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --primary: #7453DE;
-  --primary-foreground: #ffffff;
-  --card: #171717;
-  --card-foreground: #ededed;
-  --border: #262626;
-  --muted: #262626;
-  --muted-foreground: #a3a3a3;
+  --background: #0a192f;
+  --foreground: #ccd6f6;
+  --primary: #64ffda;
+  --primary-foreground: #0a192f;
+  --card: #112240;
+  --card-foreground: #ccd6f6;
+  --border: #233554;
+  --muted: #112240;
+  --muted-foreground: #8892b0;
 }
 
 @theme inline {
@@ -40,33 +24,63 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: "Inter", var(--font-geist-sans);
+  --font-mono: "Fira Code", var(--font-geist-mono);
+
+  --color-slate-lightest: #ccd6f6;
+  --color-slate-light: #a8b2d1;
+  --color-slate: #8892b0;
+  --color-navy-lightest: #233554;
+  --color-navy-light: #112240;
+  --color-navy: #0a192f;
+  --color-green: #64ffda;
+  --color-green-tint: rgba(100, 255, 218, 0.1);
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-navy-lightest);
+  color: var(--color-slate-lightest);
 }
 
 /* Typography Customization */
 .prose {
-  @apply text-foreground;
+  @apply text-slate;
 }
 .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-  @apply text-foreground font-bold;
+  @apply text-foreground font-semibold;
 }
 .prose a {
-  @apply text-primary no-underline hover:underline;
+  @apply text-primary no-underline transition-all relative inline-block;
+}
+.prose a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  position: relative;
+  bottom: 0.15em;
+  background-color: var(--color-primary);
+  opacity: 0.5;
+  transition: width 0.25s ease;
+}
+.prose a:hover::after, .prose a:focus::after {
+  width: 100%;
 }
 .prose strong {
-  @apply text-foreground font-bold;
+  @apply text-foreground font-semibold;
 }
 .prose code {
-  @apply text-primary bg-muted px-1 py-0.5 rounded text-sm;
+  @apply text-primary font-mono text-sm;
 }
 .prose blockquote {
-  @apply border-l-4 border-primary pl-4 italic;
+  @apply border-l-4 border-primary pl-4 italic text-slate-light;
 }

@@ -1,50 +1,32 @@
-import Image from "next/image";
-import { FadeIn } from "./FadeIn";
-
 export function Hero() {
   return (
-    <section id="top" className="py-20 md:py-32 container max-w-screen-2xl mx-auto px-4 md:px-8">
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        <FadeIn className="flex justify-center md:justify-start order-2 md:order-1">
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 bg-muted border-4 border-background">
-            <Image
-              src="/FK.png"
-              alt="Franz"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-        </FadeIn>
+    <section 
+      id="top" 
+      className="flex flex-col justify-center items-start min-h-screen p-0 m-0 w-full"
+    >
+      <div className="w-full">
+        <h1 className="text-primary font-mono text-sm sm:text-[16px] font-normal mb-[30px] ml-1">
+          Hi, my name is
+        </h1>
         
-        <div className="flex flex-col space-y-6 order-1 md:order-2">
-          <FadeIn delay={200}>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-              Hi, I'm <span className="text-primary">Franz</span>
-            </h1>
-          </FadeIn>
-          
-          <FadeIn delay={400}>
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-             Backend developer building reliable and secure backend systems with <span className="text-foreground font-medium underline decoration-primary decoration-2 underline-offset-4">TypeScript</span>, <span className="text-foreground font-medium underline decoration-primary decoration-2 underline-offset-4">NodeJS</span>, and <span className="text-foreground font-medium underline decoration-primary decoration-2 underline-offset-4">NestJS</span>.
-            </p>
-          </FadeIn>
-
-          <FadeIn delay={600} className="flex gap-4">
-             <a 
-              href="#contact" 
-              className="inline-flex h-11 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-            >
-              Get in touch
-            </a>
-            <a 
-              href="#experience" 
-              className="inline-flex h-11 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-            >
-              View Work
-            </a>
-          </FadeIn>
-        </div>
+        <h2 className="text-slate-lightest text-4xl sm:text-5xl md:text-7xl font-semibold m-0 leading-[1.1]">
+          Franz Khyl Ong.
+        </h2>
+        
+        <h3 className="text-slate text-4xl sm:text-5xl md:text-[64px] lg:text-7xl font-semibold mt-2 mb-[20px] leading-[1.1]">
+          I build reliable backend systems.
+        </h3>
+        
+        <p className="text-slate text-lg sm:text-lg max-w-[540px] mt-5 mb-12">
+          I'm a backend developer specializing in building exceptional, secure, and reliable digital experiences using <span className="text-primary/90">TypeScript</span>, <span className="text-primary/90">NodeJS</span>, and <span className="text-primary/90">NestJS</span>.
+        </p>
+        
+        <a 
+          href="#contact" 
+          className="text-primary bg-transparent border border-primary rounded px-7 py-4 font-mono text-[14px] leading-[1] hover:bg-green-tint transition-colors inline-block mt-[10px]"
+        >
+          Check out my work!
+        </a>
       </div>
     </section>
   );
