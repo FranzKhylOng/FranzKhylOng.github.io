@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${firaCode.variable} antialiased min-h-screen bg-navy text-slate font-sans selection:bg-navy-lightest selection:text-slate-lightest`}
+        className={`${inter.variable} ${firaCode.variable} antialiased min-h-screen bg-navy text-slate font-sans selection:bg-navy-lightest selection:text-slate-lightest relative`}
         suppressHydrationWarning
       >
         <Header />

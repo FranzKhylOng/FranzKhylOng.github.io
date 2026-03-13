@@ -20,11 +20,14 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="flex flex-col justify-center items-start min-h-screen p-0 m-0 w-full"
+      className="flex flex-col justify-center items-start min-h-screen p-0 m-0 w-full relative"
     >
+      {/* Background Grid */}
+      <div className="absolute inset-0 z-[-1] h-full w-full bg-grid opacity-30"></div>
+
       <div className="w-full">
         <FadeIn delay={100}>
-          <h1 className="text-primary font-mono text-sm sm:text-[16px] font-normal mb-[30px] ml-1">
+          <h1 className="text-primary font-mono text-sm sm:text-[18px] font-normal mb-[20px] ml-1">
             Hi, my name is
           </h1>
         </FadeIn>

@@ -4,7 +4,7 @@ import { FadeIn } from "./FadeIn";
 export function Education() {
   return (
     <section id="education" className="max-w-[900px] w-full mx-auto py-[100px]">
-      <FadeIn delay={100} className="w-full">
+      <FadeIn delay={200} className="w-full">
         <h2 className="flex items-center text-slate-lightest text-[32px] font-semibold whitespace-nowrap mb-10 w-full
           before:content-['03.'] before:relative before:bottom-1 before:text-primary before:font-mono before:text-xl before:mr-2 before:font-normal
           after:content-[''] after:block after:relative after:top-1 after:w-full after:h-[1px] after:ml-5 after:bg-navy-lightest">

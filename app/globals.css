@@ -84,3 +84,13 @@ body {
 .prose blockquote {
   @apply border-l-4 border-primary pl-4 italic text-slate-light;
 }
+
+/* Background Grid */
+.bg-grid {
+  background-size: 100px 100px;
+  background-image: 
+    linear-gradient(to right, var(--color-navy-lightest) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-navy-lightest) 1px, transparent 1px);
+  mask-image: radial-gradient(circle at center, black 0%, transparent 70%);
+  -webkit-mask-image: radial-gradient(circle at center, black 0%, transparent 70%);
+}
