@@ -1,37 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hi, I'm Franz Khyl Ong 👋
 
-## Getting Started
+Backend Engineer with ~3 years of experience building scalable APIs and secure systems.  
+Experienced in TypeScript, NestJS, MongoDB, and GraphQL. I also have hands-on experience in application security and penetration testing.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Backend**
+- TypeScript
+- Node.js
+- NestJS
+- GraphQL
+- REST APIs
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Database**
+- MongoDB
+- Data aggregation pipelines
+- Performance optimization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Security**
+- API authentication (JWT, HMAC)
+- Vulnerability discovery and remediation
+- Penetration testing
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📌 Notable Work
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Identified and fixed a **financial exploit that allowed unlimited fund claims**
+- Discovered a **Denial-of-Service vulnerability affecting multiple API endpoints**
+- Built and maintained **production GraphQL and REST APIs** used in a high-traffic gaming platform
+- Designed **data aggregation systems** for large MongoDB datasets
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📫 Connect With Me
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# portfolio
+- LinkedIn: https://linkedin.com/in/franz-khyl-ong
